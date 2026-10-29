@@ -1,0 +1,10 @@
+/* Les images prennent toute la largeur de l'écran, avec leur vrai ratio. */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Le logo reste petit. */
+#entete img {
+  width: 100px;
+}

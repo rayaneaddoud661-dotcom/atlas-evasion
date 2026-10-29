@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlas Evasion - Contact</title>
+<meta name="description" content="Contactez Atlas Évasion pour réserver votre voyage au Maroc.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Image LCP : chargement prioritaire. Dimensions estimées : à remplacer par les vraies. -->
+<img src="images/banniere-contact.avif" alt="La médina de Marrakech et le minaret de la Koutoubia" width="1600" height="400" fetchpriority="high">
+
+<div id="menu">
+<p><a href="index.html">Accueil</a> | <a href="destinations.html">Destinations</a> | <a href="galerie.html">Galerie</a> | <a href="tarifs.html">Tarifs</a> | <a href="contact.html">Contact</a></p>
+</div>
+
+<h1>Contactez-nous</h1>
+
+<p id="infos">Atlas Evasion - 12, avenue Mohammed V - Marrakech<br>
+Tél : <a href="tel:+212524000000">05 24 00 00 00</a><br>
+Email : <a href="mailto:contact@atlas-evasion.example">contact@atlas-evasion.example</a></p>
+
+<p>Agence ouverte du lundi au samedi de 9h a 19h.</p>
+
+<h2>Formulaire de réservation</h2>
+
+<form action="https://www.it-training.ma/atlas/envoi.php" method="post" enctype="multipart/form-data">
+
+<p><label for="nom">Nom *</label> <input type="text" id="nom" name="nom" autocomplete="family-name" required></p>
+
+<p><label for="prenom">Prénom</label> <input type="text" id="prenom" name="prenom" autocomplete="given-name"></p>
+
+<p><label for="email">Email *</label> <input type="email" id="email" name="email" autocomplete="email" required></p>
+
+<p><label for="tel">Téléphone *</label> <input type="tel" id="tel" name="tel" autocomplete="tel" required></p>
+
+<p><label for="cin">N° CIN</label> <input type="text" id="cin" name="cin"></p>
+
+<p><label for="date_depart">Date de départ</label> <input type="date" id="date_depart" name="date_depart"></p>
+
+<fieldset>
+<legend>Sexe</legend>
+<label><input type="radio" name="sexe" value="H"> Homme</label>
+<label><input type="radio" name="sexe" value="F"> Femme</label>
+</fieldset>
+
+<p><label for="destination">Destination</label>
+<select id="destination" name="destination">
+<option>Marrakech</option>
+<option>Merzouga</option>
+<option>Chefchaouen</option>
+<option>Essaouira</option>
+</select></p>
+
+<p><label for="passeport">Copie du passeport</label> <input type="file" id="passeport" name="passeport"></p>
+
+<p><label for="message">Message</label><br>
+<textarea id="message" name="message" placeholder="Votre message"></textarea></p>
+
+<p><button type="submit"><img src="images/icone-envoyer.avif" alt="Envoyer" width="40" height="40"></button></p>
+
+</form>
+
+<div id="newsletter">
+<h2>Newsletter</h2>
+<form action="https://www.it-training.ma/atlas/newsletter.php" method="post">
+<p><label for="mail_news">Inscrivez vous a notre newsletter pour recevoir nos promo !!!</label> <input type="email" id="mail_news" name="mail_news" autocomplete="email" required> <input type="image" src="images/btn-ok.avif" alt="S'inscrire à la newsletter" width="80" height="32"></p>
+</form>
+</div>
+
+<h2>Nous trouver</h2>
+<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-8.02%2C31.62%2C-7.98%2C31.64&amp;layer=mapnik" title="Carte : emplacement d'Atlas Evasion à Marrakech" width="600" height="400" loading="lazy"></iframe>
+
+<p>Pour toutes questions, <a href="tarifs.html">consultez nos tarifs</a>. <span lang="en">Book now !</span></p>
+
+<div id="pied">
+<p>© 2019 Atlas Evasion - Tout droits réservés</p>
+<p>Site fictif réalisé pour un exercice pédagogique.</p>
+</div>
+
+</body>
+</html>
